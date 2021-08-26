@@ -45,6 +45,7 @@
 			$nivel = "";
 			// TODO (1) declarar variable como arreglo
 			$lenguajes = array();
+			$expEmail="/[a-z0-9-_.]*@[a-z0-9]*\.[a-z]*/i";
 			
 			if(isset($_POST['nombre'])){
 				$nombre = $_POST['nombre'];
@@ -52,6 +53,8 @@
 				$email = $_POST['email'];
 				$pais = $_POST['pais'];
 				
+				
+
 				if(isset($_POST['nivel'])){
 					$nivel = $_POST['nivel'];
 				}else{
@@ -76,7 +79,9 @@
 					array_push($campos, "El campo Password no puede estar vacío, ni tener menos de 6 caracteres.");
 				}
 
-				if($email == "" || strpos($email, "@") === false){
+				$isEmailValid = preg_match($expEmail, $email);
+
+				if(   $isEmailValid == 0){
 					array_push($campos, "Ingresa un correo electrónico válido.");
 				}
 
@@ -88,8 +93,8 @@
 					array_push($campos, "Selecciona un nivel de desarrollo.");
 				}
 				// TODO (3) Validar que el campo no esté vacío
-				if($lenguajes == "" || count($lenguajes) < 2){
-					array_push($campos, "Selecciona al menos dos lenguajes de programación.");
+				if( count($lenguajes) < 2){
+					array_push($campos, "Selecciona al menos dos lenguajes de programación por favor.");
 				}
 
 				if(count($campos) > 0){

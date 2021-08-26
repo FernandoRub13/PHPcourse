@@ -123,11 +123,11 @@
 			<p>Contraseña:</p>
 			<div class="field-container">
 				<i class="fa fa-key fa-lg" aria-hidden="true"></i>	
-				<input name="password" type="password" class="field" placeholder="*******"> <br/>
+				<input name="password" type="password" class="field" placeholder="•••••••••"> <br/>
 			</div>
 			<p class="center-content">
 				<input type="submit" class="btn btn-green" value="Iniciar sesión"> <br/><br/>
-				<a href="recibir_get.php?tipo_usuario=nuevo&navegador=chrome">Registra cuenta</a>
+				<a href="recibir_get.php?tipo_usuario=nuevo&navegador=firefox">Registra cuenta</a>
 			</p>
 		</form>	
 

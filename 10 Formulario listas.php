@@ -72,9 +72,11 @@
 
 				if(count($campos) > 0){
 					echo "<div class='error'>";
+					echo "<ul>";
 					for($i = 0; $i < count($campos); $i++){
 						echo "<li>".$campos[$i]."</i>";
 					}
+					echo "</ul>";
 				}else{
 					echo "<div class='correcto'>
 							Datos correctos";

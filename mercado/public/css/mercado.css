@@ -1,0 +1,42 @@
+.tarjeta-login {
+    max-width: 40rem;
+    margin   : 10vh auto;
+}
+
+.navbar {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a759+0,00f482+52,00a759+100 */
+    background: #274261;
+    color: aliceblue;
+    
+}
+.center-elm{
+    margin: auto auto auto auto;
+}
+.error{
+    background-color: #d74747;
+    max-width: 370px;
+    height: 3rem;
+    margin: 1rem auto 0rem auto ;
+    color: antiquewhite;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+.img{
+    max-width: 5rem;
+}
+
+.dropdown-menu{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+background: slategrey;
+}
+body{
+    background: url(../img/background.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+    
+}

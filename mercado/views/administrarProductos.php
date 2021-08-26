@@ -1,0 +1,1 @@
+<h2>Administrar productos</h2>

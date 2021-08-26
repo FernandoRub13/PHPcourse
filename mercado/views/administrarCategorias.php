@@ -1,0 +1,1 @@
+<h2>Administrar categorías</h2>

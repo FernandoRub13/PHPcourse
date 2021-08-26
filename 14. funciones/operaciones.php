@@ -11,9 +11,10 @@
 			return false;
 		}
 	}
+	
 
 	function mostrarError(){
-		echo "<span class='error'>Ingresa solo números</span>";
+		echo "<span class='error'>Ingresa solamente números</span>";
 	}
 
 	function validarCampos(){
@@ -21,11 +22,15 @@
 			$n1 = $_POST['numero01'];
 			$n2 = $_POST['numero02'];
 
-			if(esNumero($n1, $n2)){
+			if($n1 == "" || $n2 == ""){
+				echo "<span class='error'>Ingresa ambos números</span>";
+			}else if(esNumero($n1, $n2)){
 				echo multiplicar($n1, $n2);
 			}else{
 				mostrarError();
 			}
+		}else{
+			echo "<span class='error'>No existe algún input</span>";
 		}
 	}
 

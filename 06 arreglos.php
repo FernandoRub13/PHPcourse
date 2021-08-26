@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Arreglos</title>
 	<style>
-		body{background-color: #B5CDE6; font-family: Arial; font-size: 4em; padding: 50px;}
+		body{background-color: #B5CDE6; font-family: Arial; font-size: 4em; padding: 50px; font-size: small;}
 	</style>
 </head>
 <body>
@@ -17,7 +17,7 @@
 
 		echo "<br >";
 
-		echo count($frutas) . " elementos";
+		echo count($frutas) . " frutas";
 
 		echo "<br >";
 
@@ -38,7 +38,7 @@
 
 
 		foreach($edades as $key => $value){
-			echo $key . " tiene el valor de " . $value . "<br />";
+			echo $key . " tiene " . $value . " años<br />";
 		}
 
 	?>
